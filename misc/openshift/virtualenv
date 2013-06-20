@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source $OPENSHIFT_REPO_DIR/misc/openshift/config
+
+function activate_virtualenv() {
+    source "$VIRTUALENV_DIR/bin/activate"
+}

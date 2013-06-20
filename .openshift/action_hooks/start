@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source $OPENSHIFT_REPO_DIR/misc/openshift/virtualenv
+
+activate_virtualenv
+nohup uwsgi --ini $UWSGI_DIR/uwsgi.ini&
+nohup $NGINX_DIR/sbin/nginx&

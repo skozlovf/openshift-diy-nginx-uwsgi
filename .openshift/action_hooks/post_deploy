@@ -1,0 +1,14 @@
+#!/bin/bash
+# This is a simple post deploy hook executed after your application 
+# is deployed and started.  This script gets executed directly, so 
+# it could be python, php, ruby, etc.
+
+# Example deploy actions:
+# 
+#   source $OPENSHIFT_REPO_DIR/misc/openshift/func
+#   source $OPENSHIFT_REPO_DIR/misc/openshift/virtualenv
+#   activate_virtualenv
+#   .... my actions ...
+#   deactivate
+# 
+# See deploy and build scripts for more info.

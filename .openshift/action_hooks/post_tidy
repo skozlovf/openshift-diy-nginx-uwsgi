@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source $OPENSHIFT_REPO_DIR/misc/openshift/func
+
+msg_info "Removing temp files..."
+rm -rf $OPENSHIFT_TMP_DIR/*
