@@ -31,3 +31,12 @@ To install additional packages just edit `requirements.txt`.
 
 Additional deploy actions may be performed in the
 `.openshift/action_hooks/post_deploy` script.
+
+
+Notes
+-----
+
+If you experience problems with downloading (or building) tools on first
+push or want to use different versions of them then you may want to update
+URLs of the tools in the `.openshift/action_hooks/build` or versions
+in the `misc/openshift/config`.
