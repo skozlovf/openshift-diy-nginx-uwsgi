@@ -4,7 +4,7 @@ html = """<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Python 2.7.5 + Nginx + uWSGI on OpenShift</title>
+<title>Python 2.7 + Nginx + uWSGI on OpenShift</title>
 <style>
 body {
     background: #333;
@@ -27,7 +27,7 @@ body {
 </head>
 <body>
 <div class="box">
-<h1>Python 2.7.5 + Nginx + uWSGI</h1>
+<h1>Python 2.7 + Nginx + uWSGI</h1>
 <h2>Your application environment</h2>
 %s
 </div>
