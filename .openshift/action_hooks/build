@@ -19,9 +19,9 @@ function check_python() {
 
     msg_info "Installing python $PYTHON_VERSION..."
     cd $OPENSHIFT_TMP_DIR
-    wget http://python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.bz2
+    wget http://python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tgz
 
-    tar xfj Python-$PYTHON_VERSION.tar.bz2
+    tar zxf Python-$PYTHON_VERSION.tgz
     cd Python-$PYTHON_VERSION
     ./configure --prefix=$PYTHON_DIR
     make install -j$NUMBER_OF_PROCESSORS
@@ -67,8 +67,13 @@ function check_nginx() {
     msg_info "Installing nginx $NGINX_VERSION..."
     cd $OPENSHIFT_TMP_DIR
     wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${NGINX_PCRE_VERSION}.tar.bz2
+    check_status $? "Download pcre..."
+
     wget http://zlib.net/zlib-${NGINX_ZLIB_VERSION}.tar.gz
+    check_status $? "Download zlib..."
+
     wget http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz
+    check_status $? "Download nginx..."
 
     tar jxf pcre-${NGINX_PCRE_VERSION}.tar.bz2
     tar zxf zlib-${NGINX_ZLIB_VERSION}.tar.gz
