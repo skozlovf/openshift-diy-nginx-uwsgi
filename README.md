@@ -1,7 +1,7 @@
-Python 2.7.5 + Nginx + uWSGI on OpenShift
+Python 2.7 + Nginx + uWSGI on OpenShift
 =========================================
 
-Simple DIY cartridge to add Python 2.7.5, Nginx and uWSGI support on OpenShift.
+Simple DIY cartridge to add Python 2.7, Nginx and uWSGI support on OpenShift.
 
 Setting up Openshift
 --------------------
